@@ -7,6 +7,7 @@ import { cn } from "@/lib/utils"
 import { SiteHeader } from "@/components/site-header"
 import { TailwindIndicator } from "@/components/tailwind-indicator"
 import { ThemeProvider } from "@/components/theme-provider"
+import FooterSection from "@/components/section/FooterSection"
 
 export const metadata: Metadata = {
   title: {
@@ -36,7 +37,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <head />
         <body
           className={cn(
-            "min-h-screen bg-background font-sans antialiased",
+            "min-h-screen bg-background font-sans antialiased selection:bg-white selection:text-black",
             fontSans.variable
           )}
         >
@@ -46,6 +47,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
               <div className="flex-1">{children}</div>
             </div>
             <TailwindIndicator />
+            <FooterSection/>
           </ThemeProvider>
         </body>
       </html>
