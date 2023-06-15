@@ -2,5 +2,5 @@
 Ngetest shadcn ui aja sih ini mah
 
 # Todo
-- [ ] Bikin data json buat project nya
-- [ ] Design ui buat cover tiap project
+- [x] Bikin data json buat project nya
+- [x] Design ui buat cover tiap project

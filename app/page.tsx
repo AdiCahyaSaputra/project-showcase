@@ -1,13 +1,6 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card"
-import { AspectRatio } from "@/components/ui/aspect-ratio"
+import ProjectSection from "@/components/section/ProjectSection"
+
 
 export default function IndexPage() {
   return (
@@ -34,64 +27,16 @@ export default function IndexPage() {
             <TabsTrigger value="mobile">Mobile</TabsTrigger>
           </TabsList>
 
-          <TabsContent value="fe" className="mt-0 grid grid-cols-12 gap-2">
-
-            {"aaaaa".split('').map((item) => (
-              <Card className="col-span-12 lg:col-span-3">
-                <CardHeader>
-                  <CardTitle>Personal Website</CardTitle>
-                  <CardDescription>Used for explain about myself</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="w-full">
-                    <AspectRatio ratio={16 / 9} className="bg-black dark:bg-white">
-                      <div></div>
-                    </AspectRatio>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-
+          <TabsContent value="fe" className="mt-0">
+            <ProjectSection type="fe" />
           </TabsContent>
 
           <TabsContent value="be" className="mt-0 grid grid-cols-12 gap-2">
-
-            {"aaaaa".split('').map((item) => (
-              <Card className="col-span-12 lg:col-span-3">
-                <CardHeader>
-                  <CardTitle>Personal Website</CardTitle>
-                  <CardDescription>Used for explain about myself</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="w-full">
-                    <AspectRatio ratio={16 / 9} className="bg-black dark:bg-white">
-                      <div></div>
-                    </AspectRatio>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-
+            <ProjectSection type="be" />
           </TabsContent>
 
           <TabsContent value="mobile" className="mt-0 grid grid-cols-12 gap-2">
-
-            {"aaaaa".split('').map((item) => (
-              <Card className="col-span-12 lg:col-span-3">
-                <CardHeader>
-                  <CardTitle>Personal Website</CardTitle>
-                  <CardDescription>Used for explain about myself</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="w-full">
-                    <AspectRatio ratio={16 / 9} className="bg-black dark:bg-white">
-                      <div></div>
-                    </AspectRatio>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-
+            <ProjectSection type="mobile" />
           </TabsContent>
 
         </Tabs>
