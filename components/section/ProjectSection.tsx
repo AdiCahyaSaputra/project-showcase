@@ -22,7 +22,7 @@ const ProjectSection: React.FC<TProps> = ({ type }) => {
             />))}
         </div>
       ) : (
-        <p className="col-span-12 w-max border-l-4 border-red-600 p-1.5 pl-2 text-sm font-light">
+        <p className="col-span-12 w-max overflow-hidden rounded-lg p-2 pl-0 text-sm font-light">
           There&apos;s No Project For Now
         </p>
       )}

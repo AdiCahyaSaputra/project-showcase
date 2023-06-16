@@ -8,15 +8,15 @@ type Props = IProject
 
 const ProjectCard: React.FC<Props> = ({ name, desc, image }) => {
   return (
-    <Card className="col-span-12 lg:col-span-3">
+    <Card className="col-span-12 flex cursor-pointer flex-col justify-between transition-all hover:border-white lg:col-span-3">
       <CardHeader>
         <CardTitle>{name}</CardTitle>
         <CardDescription>{desc}</CardDescription>
       </CardHeader>
       <CardContent>
         <div className="w-full">
-          <AspectRatio ratio={16 / 9} className="relative bg-black dark:bg-white">
-            <Image src={image} alt={name} fill className='p-1'/>
+          <AspectRatio ratio={16 / 9} className="relative bg-accent">
+            <Image src={image} alt={name} fill className='p-1' />
           </AspectRatio>
         </div>
       </CardContent>

@@ -4,5 +4,17 @@
     "desc": "The place to rent your car if you need emergency money",
     "image": "/image/rm.png",
     "type": "fe"
+  },
+  {
+    "name": "Personal Branding",
+    "desc": "For my english practical examination",
+    "image": "/image/pbe.png",
+    "type": "fe"
+  },
+  {
+    "name": "Toko Online",
+    "desc": "Very minimalistic e-commerce ft.Discord friends",
+    "image": "/image/to.png",
+    "type": "fe"
   }
 ]
